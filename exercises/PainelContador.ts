@@ -32,9 +32,9 @@ export default class PainelContador {
 
     private validarLimites(limiteInferior:number, limiteSuperior:number): void {
         if(limiteInferior > limiteSuperior) {
-            this.temp = limiteSuperior;
+            let temp:number = limiteSuperior;
             this.limiteSuperior = limiteInferior;
-            this.limiteInferior = this.temp;
+            this.limiteInferior = temp;
             return;
         }
     }
